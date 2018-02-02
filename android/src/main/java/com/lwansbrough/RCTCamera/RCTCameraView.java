@@ -136,6 +136,10 @@ public class RCTCameraView extends ViewGroup {
         RCTCamera.getInstance().setBarCodeTypes(types);
     }
 
+    public void setDefaultOnFocusComponent(boolean defaultOnFocusComponent) {
+        this._viewFinder.setDefaultOnFocusComponent(defaultOnFocusComponent);
+    }
+
     public void setClearWindowBackground(boolean clearWindowBackground) {
         this._clearWindowBackground = clearWindowBackground;
         if (this._viewFinder != null) {
